@@ -388,7 +388,7 @@ KERNELRELEASE = $(shell cat include/config/kernel.release 2> /dev/null)
 KERNELVERSION = $(VERSION)$(if $(PATCHLEVEL),.$(PATCHLEVEL)$(if $(SUBLEVEL),.$(SUBLEVEL)))$(EXTRAVERSION)
 
 # add hisilicon balong configs
-BALONG_TOPDIR = $(CURDIR)/../../../../../../kernel/drivers/vendor/hisi
+BALONG_TOPDIR = $(srctree)/drivers/vendor/hisi
 OBB_PRODUCT_NAME = hi3630_udp
 CFG_PLATFORM = hi3630
 export BALONG_TOPDIR OBB_PRODUCT_NAME CFG_PLATFORM
